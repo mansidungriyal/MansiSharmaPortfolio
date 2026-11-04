@@ -1,6 +1,10 @@
+<!doctype html>
+<html lang="en">
+<head>
 <meta charset="utf-8">
 <title>Mansi's Crates</title>
-<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Mansi Sharma: growth, product and analytics portfolio, built by voice with Wispr Flow.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap">
 <style>
 /* Layout: white claw line under the nav, giant MANSI SHARMA, nine tilted sticker crates picked up by the claw, intro block, marquee, closing. Single light look. */
@@ -24,9 +28,9 @@ html{background:#1A1060}
 body{margin:0;background-color:#060A24;background-image:radial-gradient(ellipse 70% 40% at 50% 28%,rgba(70,90,255,.28),transparent 70%),radial-gradient(ellipse 60% 30% at 50% 78%,rgba(150,80,255,.18),transparent 70%),linear-gradient(180deg,#05081F 0%,#0A1040 60%,#070A28 100%);color:var(--cream);font-family:var(--body);font-size:16px;line-height:1.55;overflow-x:hidden;
   padding-block:18px 36px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 .wrap{max-width:1080px;margin:0 auto;position:relative;z-index:1}
-html{overflow-x:clip}
-body{position:relative;overflow-x:clip}
-.wm{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+html{overflow-x:hidden}
+body{position:relative;overflow-x:hidden;max-width:100vw}
+.wm{position:fixed;inset:0;overflow:hidden;contain:paint;pointer-events:none;z-index:0}
 .wm span{position:absolute;left:0;top:100%;white-space:nowrap;font-family:var(--display);font-size:120px;line-height:.9;letter-spacing:.02em;transform-origin:0 0;transform:rotate(-90deg)}
 .wm b{display:inline-block;font-weight:400;color:rgba(255,255,255,.045);-webkit-text-stroke:1.5px rgba(255,255,255,.13);text-shadow:0 0 40px rgba(255,255,255,.12),0 0 90px rgba(150,170,255,.12)}
 .nav{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
@@ -198,6 +202,8 @@ footer{margin-top:120px;display:grid;grid-template-columns:1.2fr 1fr;gap:28px;al
 #cf{position:fixed;inset:0;pointer-events:none;z-index:30;width:100%;height:100%}
 @media(prefers-reduced-motion:reduce){.slot,.card,.photo,.marq div,.panel,.l,.hero::before,.hero::after,.orb,.spk,.dc1{animation:none}.hero{transform:none!important}}
 </style>
+</head>
+<body>
 
 <div class="wm" aria-hidden="true"><span id="wmw"><b>PORTFOLIO</b></span></div>
 <div class="wrap">
@@ -391,3 +397,6 @@ function tick(){
   if(ps.length)requestAnimationFrame(tick);else{run=false;cx.clearRect(0,0,cv.width,cv.height)}
 }
 </script>
+
+</body>
+</html>
